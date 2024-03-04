@@ -1,8 +1,9 @@
 运行环境: python=3.8
 conda包 : pip install requests xmltramp2 biopython 
 
+0. 首先在当前环境下创建两个目录：输入文件目录(infileFasta)和结果输出目录(results)
 1. 将所有的序列放到一个fasta文件中（比如: examples.fasta），并将该文件放到 "./infileFasta/" 目录下；
-2. 运行命令: python run_runPfamScan.py ./infileFasta/examples.fasta
+2. 运行命令: `python run_runPfamScan.py ./infileFasta/examples.fasta`
 3. 输出结果放在 "./results/" 目录下；
 
 ps. pfamscan_api 输入的fasta文件中最多100条序列，所以当输入fasta文件中的序列数目<=100时，"./results/"目录下只有三个文件；如果序列数目>100，则会先将输入fasta分割成多个文件("./infileFasta/part_*.fasta")，之后对每一个part_*.fasta进行pfam预测，对应的结果存放在"./results/"目录下("./results/part_*")。
