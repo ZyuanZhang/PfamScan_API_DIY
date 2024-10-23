@@ -8,4 +8,4 @@ conda包 : pip install requests xmltramp2 biopython
 
 ps. pfamscan_api 输入的fasta文件中最多100条序列，所以当输入fasta文件中的序列数目<=100时，"./results/"目录下只有三个文件；如果序列数目>100，则会先将输入fasta分割成多个文件("./infileFasta/part_*.fasta")，之后对每一个part_*.fasta进行pfam预测，对应的结果存放在"./results/"目录下("./results/part_*")。
 
-参考：http://t.csdnimg.cn/VoRXa
+参考：https://blog.csdn.net/weixin_44065416/article/details/125990336
